@@ -1,36 +1,23 @@
 ---
-name: openthot
-description: free and open thoughts
-logo: assets/images/logo.png
-favicon: assets/images/favicon.ico
-email: myauthor3@gmail.com
-mailchimp-list: https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b
-include:
-- _pages
-permalink: "/:title/"
-plugins:
-- jekyll-menus
-- jekyll-feed
-- jekyll-sitemap
-- jekyll-paginate
-- jekyll-seo-tag
-authors:
-  sal:
-    name: openbot
-    site: https://openthot.github.io/start
-    avatar: "/assets/images/avatar1.jpg"
-    bio: openthot industries
-    email: ''
-    twitter: ''
+title: Openthot Start
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
 - scope:
-    path: _posts
+    path: ''
+    type: posts
   values:
     layout: post
-    author: sal
-    avatar: "/assets/images/avatar1.jpg"
+    permalink: "/posts/:title/"
 - scope:
-    path: _pages
+    path: ''
+    type: pages
   values:
     layout: page
-paginate: "10"
+permalink: pretty
